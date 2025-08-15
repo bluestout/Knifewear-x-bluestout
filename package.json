@@ -1,18 +1,22 @@
 {
-  "name": "node-app",
+  "name": "bluestout-x-knifewear",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "license": "UNLICENSED",
   "scripts": {
-    "order": "echo \"Error: no test specified\" && exit 1"
+    "shopify": "shopify",
+    "build": "shopify app build",
+    "dev": "shopify app dev",
+    "info": "shopify app info",
+    "generate": "shopify app generate",
+    "deploy": "shopify app deploy"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@vercel/node": "^5.0.2"
-  },
-  "dependencies": {
-    "dotenv": "^16.4.7"
-  }
+  "dependencies": {},
+  "trustedDependencies": [
+    "@shopify/plugin-cloudflare"
+  ],
+  "author": "alihaider",
+  "private": true,
+  "workspaces": [
+    "extensions/*"
+  ]
 }
