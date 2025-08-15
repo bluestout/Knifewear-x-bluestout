@@ -3,6 +3,19 @@ query CartTransformRunInput {
     lines {
       id
       quantity
+      attribute(key: "_blade_guard") {
+        value
+      }
+      cost {
+        amountPerQuantity {
+          amount
+        }
+      }
+      merchandise {
+        ... on ProductVariant {
+          id
+        }
+      }
     }
   }
 }

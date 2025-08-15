@@ -1,0 +1,36 @@
+{
+  "cart": {
+    "lines": [
+      {
+        "id": "gid://shopify/CartLine/1",
+        "quantity": 1,
+        "attribute": {
+          "value": "10"
+        },
+        "cost": {
+          "amountPerQuantity": {
+            "amount": "50.00"
+          }
+        },
+        "merchandise": {
+          "__typename": "ProductVariant",
+          "id": "gid://shopify/ProductVariant/1"
+        }
+      },
+      {
+        "id": "gid://shopify/CartLine/2",
+        "quantity": 2,
+        "attribute": null,
+        "cost": {
+          "amountPerQuantity": {
+            "amount": "25.00"
+          }
+        },
+        "merchandise": {
+          "__typename": "ProductVariant",
+          "id": "gid://shopify/ProductVariant/2"
+        }
+      }
+    ]
+  }
+} 
